@@ -5,12 +5,12 @@ function largestOfFour(arr) {
     let bigNumArr = [];
     for (let i = 0, j = 0; i < arr.length; i++) {
         let n = arr[i][0];
-      for (j = 0; j < arr[i].length; j++) {
-        if (arr[i][j] > n) {
-            n = arr[i][j];
+        for (j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] > n) {
+                n = arr[i][j];
+            }
         }
-      }
-      bigNumArr.push(n);
+        bigNumArr.push(n);
     }
     return bigNumArr;
   }
