@@ -11,7 +11,7 @@ function findLongestWordLength(str) {
         let subStrArr = str.split(' ');
 
         // Save character count of first element in mostCharCount
-        et mostCharCount = subStrArr[0].length;
+        let mostCharCount = subStrArr[0].length;
 
         // Traverse through the array comparing the length of each element
         // to the value in mostCharCount
