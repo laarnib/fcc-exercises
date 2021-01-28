@@ -13,7 +13,7 @@ function findLongestWordLength(str) {
         // to the value in mostCharCount
         for (let word of subStrArr) {
             if (word.length >= mostCharCount) {
-            mostCharCount = word.length;
+                mostCharCount = word.length;
             }
         }
   
