@@ -1,22 +1,16 @@
+// Return the provided string with the first letter of each word capitalized. 
+// Make sure the rest of the word is in lower case.
+// For the purpose of this exercise, you should also capitalize connecting 
+// words like "the" and "of".
+
 function titleCase(str) {
-    let regex = /\s+/;
-    let strArr = str.split(regex);
-    console.log(strArr);
-    let capitalizedStr = [];
-    for (let i = 0; i < strArr.length; i++) {
-        let newStr = "";
-        for (let j = 0; j < strArr[i].length; j++) {
-            if (j === 0) {
-                newStr += strArr[i][j].toUpperCase();
-            }
-            else {
-                newStr += strArr[i][j].toLowerCase();
-            }
-        }
-        capitalizedStr.push(newStr);
-    }
+    str = str.toLowerCase();
+    let strArr = str.split(' ').map(function(word) { 
+        return word.replace(word[0], word[0].toUpperCase());
+
+    })
     
-    return capitalizedStr.join(' ');;
+    return strArr.join(' ');
   }
   
   titleCase("I'm a little tea pot");
