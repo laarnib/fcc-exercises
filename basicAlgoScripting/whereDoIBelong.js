@@ -2,7 +2,7 @@ function sort(arr) {
     // Sorting array using Insertion sort. 
     // Not sure if my insertion sort is correct.
     for (let i = 1; i < arr.length; i++) {
-        let temp, index;
+        let index;
         let min = arr[i];
         index = i;
 
